@@ -1,0 +1,175 @@
+.body-cp{
+    background-color: black;
+    
+}
+
+.cp-div{
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.form-label,.cp-head{
+    color:white;
+    font-family: Borel;
+}
+.btn{
+    color:white
+}
+.cp-div{
+    text-align: center;
+}
+/* Top-bar */
+.topbar-container{
+    height: 75px;
+    width:100%;
+    background-color: #272829;
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0;
+    border:#FFF6E0 5px solid;
+}
+.topbar-left{
+    flex:3
+}
+.logo{
+    font-size: 24px;
+    margin-left:20px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+.topbar-center{
+    flex:5;
+    width:100%;
+}
+.search-container{
+    display:flex;
+    justify-content: center;
+}
+.searchinput{
+    margin-top:2px;
+    width:750px;
+    height:50px;
+    border-radius: 30px;
+    color:black;
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    border:none;
+}
+.topbar-right{
+    flex:4;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.topbarlink{
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;;
+    margin:15px;
+    cursor:pointer;
+    color: white;
+    font-size:25px;
+    font-weight:bold;
+    font-family: Borel;
+    margin-top:25px;
+}
+.btn{
+    width:20%;
+    /* height:100%; */
+    margin:10px;
+    border-radius: 20px;
+    color:black;
+    background-color: antiquewhite;
+    border-color: black;
+    cursor: pointer;
+}
+
+.homepage-body{
+    background-color: #D8D9DA;
+}
+.profile{
+    font-size:3rem;
+    font-weight: 400;
+    text-align: center;
+    display:flex;
+    background-color:#D8D9DA;
+    justify-content: space-around;
+
+}
+.profile-div{
+    justify-content: space-between;
+    /* text-align: left; */
+    /* justify-content: flex-start; */
+    width: 100%;
+}
+.one{
+    flex:1;
+    text-align: center;
+    align-items: center;
+    background-color: #35A29F;
+}
+.two{
+    /* justify-content: center; */
+    flex:8;
+    text-align: center;
+    align-items: center;
+    background-color: #0B666A;
+    color:#272829;
+    font-weight: 500;
+}
+.third{
+    align-items:center;
+    text-align: center;
+    flex: 1;
+    background-color: #35A29F;
+}
+/* .prof-body{
+    background-color: #071952;
+} */
+.comment{
+    color:Black;
+    font-weight: 500;
+    text-shadow: #272829;
+}
+.chat{
+    background-color: #FFF6E0;
+    text-align:center;
+    height:200px;
+}
+.chat-in{
+    text-align:center;
+    vertical-align: middle;
+}
+.cont1{
+    text-align: center;
+}
+.dis{
+    font-size: 5rem;
+}
+.lead{
+    font-size: 5rem;
+}
+.p{
+    color: #FFF6E0;
+}
+.login-page{
+    background-color: #272829;
+}
+.card{
+    background-color: black;
+}
+.index-body{
+    text-align: center;
+}
+#room-container{
+    text-align: center;
+    size:3rem;
+}
+.room1{
+    text-align: center;
+    size:3 rem;
+}

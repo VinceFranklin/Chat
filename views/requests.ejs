@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="your-body">
+       <h1>Your Requests</h1>
+      <% if(locals.REQUESTS){ %>
+       <% REQUESTS.forEach(item =>{ %>
+            <ul>
+                <li>
+                    <h1><%= item %></h1>
+                </li>
+            </ul>
+     <%  })} %>
+     <form method="post" action="/requests">
+        <div>
+            <label  class="your accept">Enter Your friend name here to accept 'REQUEST'</label>
+            <input required class="accept" name="accept" type="text" placeholder="Friend Name">
+    </div>
+    <div>
+        <label class="your accept">Type "accept"</label>
+        <input required required class="accept" name="type" type="text" placeholder="accept">
+    </div>
+    <div>
+        <button type="submit" class="btn">Accept</button>
+    </div>
+     </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

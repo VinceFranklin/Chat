@@ -1,0 +1,84 @@
+!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="body-cp">
+    <div class="row justify-content-center">
+       <div class="cp-head">
+            <h1 class="cp-div">LET US KNOW ABOUT YOU !!</h1>
+       </div>
+       <div class="col-8">
+        <form method="post"  action="/createprofile">
+        <div class="row g-3 ">
+            <div class="col-12">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+            
+            <div>
+                <label class="form-label" for="email">Email</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <div>
+                <label class="form-label">description</label>
+                <!-- <input type="text" name="desc" class="form-control"> -->
+                <textarea name="desc" cols="90" class="form-control" rows="4" required></textarea>
+            </div>
+
+            <div>
+                <label class="form-label">Interests</label>
+                <small>Eg:web</small>
+                <div class="interests">
+                    <div class="interests-div">
+                        <input type="text" name="interest" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-outline-secondary" id="addinterests">add more</button>
+            </div>
+
+            <div>
+                <label class="form-label" for="privacy">Privacy</label>
+                <select class="privacy form-control form-select" aria-label="Select" name="privacy" required>
+                    <option selected required>Select</option>
+                    <option value="Private" required>Private</option>
+                    <option value="Public" required>Public</option>
+                </select>
+            </div>
+
+            <!-- <div>
+                <label class="form-label" for="image">Profile</label>
+                <input type="file" class="image" name="image" accept="image/*" required >
+            </div> -->
+
+            <div>
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </div>
+        </div>
+        </form>
+        <h2>Already filled get to "GO"</h2>
+        <form method="post" action="/cp">
+            <button type="submit" class="btn-outline-primary btn">GO</button>
+        </form>
+       </div>
+    </div>
+        
+        <script src="/js/cp.js" async defer>
+            // alert("hello")  
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

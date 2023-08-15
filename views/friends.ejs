@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="friends-body">
+        <h1>ALL USERS</h1>
+        <form action="/friends" method="post">
+            <h2>TO SEND FRIEND 'requests'</h2>
+            <div>
+            <label class="frnd">Enter your friend's Name</label>
+            <input type="text" placeholder="Name" name="friendname" class="firends-inp">
+            </div>
+            <div>
+            <label class="frnd">Type 'request'</label>
+            <input type="text" placeholder="request" class="friends-inp" name="status">
+            </div>
+            <div>
+                <button class="btn" type="submit">SEND</button>
+            </div>
+        </form>
+        <% NAMES.forEach(item=>{%>
+            <ul>
+                <li class="friends-users"> 
+                    <span><%= item %></span>
+                </li>
+            </ul>
+      <%  })%> 
+        
+        <script src="" async defer></script>
+    </body>
+</html>

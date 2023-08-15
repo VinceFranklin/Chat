@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="prof-body">
+        <div>
+            <div class="topbar-container"> 
+                <div class="topbar-left">
+                    <span class="logo">QUIZZER</span>
+                </div>
+                <div class="topbar-centre">
+                    <!-- <div class="searchbar">
+                    <form action="/homepage" method="post">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search for other userprofiles" class="searchinput" name="searched">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                    </form>
+                    </div> -->
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-links">
+                        <a class="topbarlink" type="button" href="/logout">Logout</a>
+                        <a class="topbarlink link1" type="button" href="/About">About</a>
+                        <a class="topbarlink" type="button" href="/friends">👨‍💻</a>
+                        <a class="topbarlink" type="button" href="/requests">💌</a>
+                        <a class="topbarlink type="button" href="/your-friends">🖤</a>
+                    </div>
+                    <!-- <div>
+                        <img class="topbarimg" src="" alt="pfp">
+                    </div> -->
+                </div>
+                
+            </div>
+            <div class="profile">
+                <div class="one">
+                    <h1>ANOMY</h1>
+                </div>
+                <div class="two">
+
+                
+                <div class="profile-div">
+                <div>
+                <!-- <h1>h</h1> -->
+                <hr>
+                <hr>
+                <% if(locals.NAME){ %>
+               <h1> <% NAME.forEach(item=>{ %></h1>
+                    <h1><%= item %></h1>
+              <% })}%>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div>
+              <% if(locals.COMMENT){ %>
+                <h1 class="comment"><%= COMMENT %></h1>
+                <div>
+                    <a type="button" href="/friends" class="btn btn-outline-primary">GO</a>
+                </div>
+              <%}%>
+            </div>
+         <div>
+           <% if(locals.EMAIL){%>
+            <h2> <span>Email:</span> <span><%= locals.EMAIL %></span></h2> 
+            
+          <%  }%>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+           <% if(locals.DESC){ %>
+            <h2><span>Description:</span>  <span><%= locals.DESC %></span></h2>
+            
+          <%  }%>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            
+         <%   if(locals.INTEREST){%>
+            <h1>Interests</h1>
+          <%  INTEREST.forEach(item =>{ %>
+                <ul>
+                    <li>
+                        <h2><%= item %></h2>
+                    </li>
+                </ul>
+            <%})%>
+        <%}%>
+        </div>
+        <br>
+        <hr>
+            </div>
+        </div>
+        <div class="third">
+            <h1>ANOMY</h1>
+        </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
